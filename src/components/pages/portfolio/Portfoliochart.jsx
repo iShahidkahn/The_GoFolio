@@ -5,10 +5,10 @@ import { Pie } from 'react-chartjs-2';
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const data = {
+
     labels: ['SPY', 'FLMFX', 'IWM', 'FLPSX'],
     datasets: [
         {
-            //   label: '# of Votes',
             data: [30, 12, 20, 22],
             backgroundColor: [
                 '#79d5d5',
@@ -26,10 +26,11 @@ const data = {
         },
     ],
 };
+
 const options = {
     plugins: {
         legend: {
-            display: false, // Hide the legend
+            display: false,
         },
         tooltip: {
             enabled: true,
@@ -49,6 +50,7 @@ const options = {
         },
     },
 };
+
 const Portfoliochart = () => {
     return (
         <div className="chart-wrapper">

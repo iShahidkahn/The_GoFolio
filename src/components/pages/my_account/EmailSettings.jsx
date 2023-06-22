@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const EmailSettings = () => {
     const [isClicked, setIsClicked] = useState(false);
@@ -14,9 +15,9 @@ const EmailSettings = () => {
         <div className='account-container'>
             <div className='top-bar'>
                 <ul>
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#" className='active'>Email Settings</a></li>
-                    <li><a href="#">Security</a> </li>
+                    <li><Link>Profile</Link></li>
+                    <li><Link className='active'>Email Settings</Link></li>
+                    <li><Link>Security</Link> </li>
                 </ul>
             </div>
             <div className="email-box-wrapper my-4 mx-2">
@@ -29,7 +30,6 @@ const EmailSettings = () => {
                         SAVE CHANGES
                     </button>
                 </div>
-
                 <label htmlFor="name" className="form-label">
                     First Name
                 </label>
@@ -37,8 +37,7 @@ const EmailSettings = () => {
                     type="text"
                     id="name"
                     className="form-control w-70"
-                    style={{ width: '70%' }}
-                    
+                    style={{ width: '70%' }}   
                 />
                 <label htmlFor="password" className="form-label mt-3">
                     Current Password
@@ -60,7 +59,7 @@ const EmailSettings = () => {
                     </button>
                 </div>
                 <div className="form-check mb-4 pb-1 mt-3" style={{ borderBottom: "3px solid #cecece" }}>
-                    <div className="d-block">
+                    <div className="d-md-flex" style={{justifyContent:'space-between'}}>
                         <div>
                             <input
                                 className="form-check-input"
@@ -78,7 +77,7 @@ const EmailSettings = () => {
                     </div>
                 </div>
                 <div className="form-check mb-4 pb-1" style={{ borderBottom: "3px solid #012e40" }}>
-                    <div className="d-block">
+                    <div className="d-md-flex" style={{justifyContent:'space-between'}}>
                         <div>
                             <input
                                 className="form-check-input"
@@ -97,7 +96,7 @@ const EmailSettings = () => {
                     </div>
                 </div>
                 <div className="form-check mb-4 pb-1" style={{ borderBottom: "3px solid #cecece" }}>
-                    <div className="d-block d--md-flex">
+                    <div className="d-md-flex" style={{justifyContent:'space-between'}}>
                         <div>
                             <input
                                 className="form-check-input"
@@ -114,7 +113,7 @@ const EmailSettings = () => {
                     </div>
                 </div>
                 <div className="form-check mb-4 pb-1" style={{ borderBottom: "3px solid #012e40" }}>
-                    <div className="d-block d-md-flex">
+                    <div className="d-md-flex" style={{justifyContent:'space-between'}}>
                         <div>
                             <input
                                 className="form-check-input"
@@ -133,7 +132,7 @@ const EmailSettings = () => {
                     </div>
                 </div>
                 <div className="form-check mb-4 pb-1 mb-5" style={{ borderBottom: "3px solid #cecece" }}>
-                    <div className="d-block d-md-flex">
+                    <div className="d-md-flex" style={{justifyContent:'space-between'}}>
                         <div>
                             <input
                                 className="form-check-input"

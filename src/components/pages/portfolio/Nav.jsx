@@ -10,102 +10,53 @@ import { Link } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 
 const Nav = () => {
-  const location = useLocation();
 
+  const location = useLocation();
 
   return (
 
     <>
-    {/* <nav className="navbar navbar-expand-lg">
-    <div className="container-fluid px-0" style={{ height: '70px' }}>
-      <button type="button" id="sidebarCollapse" className="btn btn-primary">
-      <i className="fa fa-bars" />
-      <span className="sr-only">Toggle Menu</span>
-    </button>
-      <span className='heading'>
-        Compare Portfolios
-      </span>
-      <button
-        className="btn btn-dark d-inline-block d-lg-none ml-auto"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i className="fa fa-bars" />
-      </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="nav navbar-nav ms-auto" style={{ height: '30px' }}>
-          <li className="nav-item">
-            <span class="position-relative">
-              <i class="fa-solid fa-bell"></i>
-              <span class="position-absolute top-0 start-100 translate-middle bg-danger border border-light rounded-circle">
-              </span>
+      <div className="d-block d-md-flex flex-wrap align-items-center py-2 py-md-4 py-lg-4 py-xl-4">
+        <div className="mb-1 mb-md-0 text-center text-md-start">
+          <Link className="nav-link ms-0" style={{ borderBottom: 'none' }}>
+            <span className="heading">
+              Compare Portfolios
             </span>
-            <span style={{ marginLeft: "10px" }}>Benjamin Treece</span>
-          </li>
-          <li className="nav-item">
-            <span className="nav-link B">
-              <p>B</p>
-            </span>
-          </li>
-          <div class="btn-group">
-            <span class="dropdown-toggle nav-link" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-              <img src={dropArrow} />
-            </span>
-            <ul class="dropdown-menu dropdown-menu-lg-end mt-2 me-1">
-              <li><button class="dropdown-item" type="button">Profile</button></li>
-              <li><button class="dropdown-item" type="button">Account Setting</button></li>
-              <li><button class="dropdown-item" type="button">Logout</button></li>
-            </ul>
-          </div>
-        </ul>
-      </div>
-    </div>
-  </nav> */}
-    <div class="d-block d-md-flex flex-wrap align-items-center py-2 py-md-4 py-lg-4 py-xl-4">
-      <div class="mb-1 mb-md-0 text-center text-md-start">
-        <a href="#" class="nav-link ms-0" style={{ borderBottom: 'none' }}>
-          <span class="heading">
-            Compare Portfolios
-          </span>
-        </a>
-      </div>
-      <div class="ms-auto mb-1">
-        <a href="#" class="nav-link text-end" tabindex="-1" aria-disabled="true" style={{ borderBottom: 'none' }}>
-          <div class="d-flex align-items-center" style={{ justifyContent: 'space-between' }}>
-            <div className='d-md-none'> 
-                <span  data-bs-toggle="offcanvas"  data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <i className="fa fa-bars me-1" />
-                    Dashboard
+          </Link>
+        </div>
+        <div className="ms-auto mb-1">
+          <Link className="nav-link text-end" tabindex="-1" aria-disabled="true" style={{ borderBottom: 'none' }}>
+            <div className="d-flex align-items-center" style={{ justifyContent: 'space-between' }}>
+              <div className='d-md-none'>
+                <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  <i className="fa fa-bars me-1" />
+                  Dashboard
                 </span>
-            </div>
-            <div className='d-flex align-items-center' style={{ justifyContent: 'space-between' }}>
-              <span class="position-relative">
-                <i class="fa-solid fa-bell"></i>
-                <span class="position-absolute start-100 translate-middle bg-danger border border-light rounded-circle" style={{top:'12%'}}></span>
-              </span>
-              <span class="ms-2">Benjamin Treece</span>
-              <span class="nav-link B me-0">
-                <p>B</p>
-              </span>
-              <div class="btn-group">
-                <a class="dropdown-toggle nav-link me-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ borderBottom: 'none' }}>
-                  <img src={dropArrow} />
-                </a>
-                <ul class="dropdown-menu dropdown-menu-lg-end mt-2 me-1">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><a class="dropdown-item" href="#">Account Setting</a></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
+              </div>
+              <div className='d-flex align-items-center' style={{ justifyContent: 'space-between' }}>
+                <span className="position-relative">
+                  <i className="fa-solid fa-bell"></i>
+                  <span className="position-absolute start-100 translate-middle bg-danger border border-light rounded-circle" style={{ top: '12%' }}></span>
+                </span>
+                <span className="ms-2">Benjamin Treece</span>
+                <span className="nav-link B me-0">
+                  <p>B</p>
+                </span>
+                <div className="btn-group">
+                  <Link className="dropdown-toggle nav-link me-0" role="button" data-bs-toggle="dropdown" aria-expanded="false" style={{ borderBottom: 'none' }}>
+                    <img src={dropArrow} alt='' />
+                  </Link>
+                  <ul className="dropdown-menu dropdown-menu-lg-end mt-2 me-1">
+                    <li><Link className="dropdown-item">Profile</Link></li>
+                    <li><Link className="dropdown-item">Account Setting</Link></li>
+                    <li><Link className="dropdown-item">Logout</Link></li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </a>
+          </Link>
+        </div>
       </div>
-    </div>
       <div
         className="offcanvas  offcanvas-start"
         tabIndex={-1}
@@ -124,44 +75,41 @@ const Nav = () => {
           />
         </div>
         <div className="offcanvas-body p-0">
-          <ul class="nav flex-column">
+          <ul className="nav flex-column">
             <li className={location.pathname === "/overview" ? "active-link" : ""}>
               <Link to="Overview">
-                <span><img className='fa' src={overview} width={28} /></span> <span className='colp'>Overview</span>
+                <span><img className='fa' src={overview} width={28} alt=''/></span> <span className='colp'>Overview</span>
               </Link>
             </li>
             <li className={location.pathname === "/account" ? "active-link" : ""}>
               <Link to="/account">
-                <span><img className='fa' src={profile} width={28} /></span>   <span className='colp'>My Account</span>
+                <span><img className='fa' src={profile} width={28} alt=''/></span>   <span className='colp'>My Account</span>
               </Link>
             </li>
             <li className={location.pathname === "/my_security" ? "active-link" : ""}>
               <Link to="/my_security">
-                <span><img className='fa' src={security} width={28} /></span>   <span className='colp'>My Security</span>
+                <span><img className='fa' src={security} width={28} alt=''/></span>   <span className='colp'>My Security</span>
               </Link>
             </li>
             <li className={location.pathname === "/" ? "active-link" : ""}>
               <Link to="/" >
-                <span><img className='fa' src={portfolio} width={28} /></span>   <span className='colp'>My Portfolios</span>
+                <span><img className='fa' src={portfolio} width={28} alt='' /></span>   <span className='colp'>My Portfolios</span>
               </Link>
             </li>
             <li className={location.pathname === "/help" ? "active-link" : ""}>
               <Link to="/help">
-                <span><img className='fa' src={help} width={28} /></span>   <span className='colp'>Help</span>
+                <span><img className='fa' src={help} width={28} alt='' /></span>   <span className='colp'>Help</span>
               </Link>
             </li>
             <li className={location.pathname === "/logout" ? "active-link" : ""}>
               <Link to="/logout">
-                <span><img className='fa' src={logout} width={28} /></span>   <span className='colp'>Logout</span>
+                <span><img className='fa' src={logout} width={28} alt='' /></span>   <span className='colp'>Logout</span>
               </Link>
             </li>
           </ul>
         </div>
       </div>
     </>
-
-    
-
 
   )
 }

@@ -7,7 +7,7 @@ const AccountTopbar = () => {
             <div className="account-topbar">
                 <div className="img-box">
                     <div className="img-box-inner">
-                        <img src="" />
+                        <img src="" alt=''/>
                         <input type="file" accept="image/*" style={{ display: 'none' }} id="upload-input" />
                         <label for="upload-input">
                             <svg xmlns="http://www.w3.org/2000/svg" className='sm-svg' style={{ marginTop: '-50px', cursor: 'pointer' }} height="3em" viewBox="0 0 512 512" fill='#c5c5c5'>

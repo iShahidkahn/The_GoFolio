@@ -16,16 +16,17 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg navbar-light top-nav">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/" style={{border:'none'}}>
-                    <img src={logo} />
+                    <img src={logo} alt=''/>
                 </Link>
                 <button
-                    className="btn btn-dark d-inline-block d-lg-none ml-auto"
+                    className="btn btn-dark d-inline-block d-lg-none ml-auto border-0"
                     type="button"
                     data-toggle="collapse"
                     data-target="#navbarSupportedContent1"
                     aria-controls="navbarSupportedContent1"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
+                    style={{ backgroundColor: '#026773'}}
                 >
                     <i className="fa fa-bars" />
                 </button>
@@ -53,7 +54,7 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item my-auto">
                             <button
-                                className={`btn button-one ${isClicked ? 'clicked' : ''}`}
+                                className={`btn ms-2 button-one ${isClicked ? 'clicked' : ''}`}
                                 onClick={handleClick}
                             >
                                 Get Started

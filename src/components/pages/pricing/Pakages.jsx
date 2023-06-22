@@ -2,7 +2,8 @@ import React from 'react'
 
 const Pakages = () => {
     return (
-        <div className='pricing-container'>
+        
+        <div className='pricing-container mb-5 pb-5'>
             <h1 className='text-center heading-text'>Pricing</h1>
             <div className="row my-4">
                 <div className="col-md-4 col-lg-4 col-sm-12">
@@ -17,7 +18,7 @@ const Pakages = () => {
                     </div>
                 </div>
                 <div className="col-md-4 col-lg-4 col-sm-12">
-                    <div className="pricing-inner-box text-center" style={{ backgroundColor: '#3ca6a6' }}>
+                    <div className="pricing-inner-box text-center" style={{ backgroundColor: '#3ca6a6'}}>
                         <h2 className='mt-3'>PROFESSIONAL</h2>
                         <h1>
                             $10
@@ -85,7 +86,6 @@ const Pakages = () => {
                         id="flush-collapseTwo"
                         className="accordion-collapse collapse"
                         data-bs-parent="#accordionFlushExample"
-
                     >
                         <div className="accordion-body">
                             Rum quas dus ent aut ut aliquam restiam escia ipsa nobit aut quis ad mod qui conse nusciist eaque nobitec uptaerferit venitatur aperferovid quatur, oditiorum nones comnisq uidelenis autem quatia sa cor sae dolorum non reiur? Us, sus. Pidit offic to temperem labo. Igenihiliqui inctatibus volorerum volectorpor sit identur, tem aribus. Repuditae pro consequosa dolorum re es modionet liquidunt aspere doloreperio. Fic te eaquunt eariatis est endam, ute et elesequo quid ma nam disquidel illuptatendi vel et eaque por assit voluptatur? Harum fugit dendaepedis am essum est explitaecus vera nimaximus dessit qui occuptatiae coressunt utemqui vellupi deriostis exernam latempor recto minveni magniendae nullecus evelluptas ut liqui andi res nemque cones acea nullab idessunt.
@@ -179,12 +179,12 @@ const Pakages = () => {
                     </div>
                     <div className="col-md-6 col-lg-6 col-sm-12">
                         <h2>Get in touch</h2>
-                        <input class="form-control" type="text" placeholder="Name" aria-label="Name" />
+                        <input className="form-control" type="text" placeholder="Name" aria-label="Name" />
                         <div className="d-flex">
-                            <input class="form-control me-2 my-3" type="email" placeholder="Email" aria-label="email" />
-                            <input class="form-control ms-2 my-3" type="text" placeholder="Phone number" aria-label="number" />
+                            <input className="form-control me-2 my-3" type="email" placeholder="Email" aria-label="email" />
+                            <input className="form-control ms-2 my-3" type="text" placeholder="Phone number" aria-label="number" />
                         </div>
-                        <textarea class="form-control" placeholder='Your message' id="exampleFormControlTextarea1" rows="5"></textarea>
+                        <textarea className="form-control" placeholder='Your message' id="exampleFormControlTextarea1" rows="5"></textarea>
                         <button className='btn mt-3'>SEND</button>
                     </div>
                 </div>

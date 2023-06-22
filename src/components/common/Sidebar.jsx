@@ -7,53 +7,52 @@ import portfolio from '../../dist/icons/GoFolio_PORTFOLIO.svg';
 import help from '../../dist/icons/GoFolio_HELP.svg';
 import logout from '../../dist/icons/GoFolio_LOGOUT.svg';
 import { Link } from 'react-router-dom';
-import { useLocation } from "react-router-dom"; 
+import { useLocation } from "react-router-dom";
 
 
 function Sidebar() {
-  const location = useLocation(); 
+  const location = useLocation();
 
   return (
     <nav id="sidebar" className="active">
-    <ul className="list-unstyled components mb-5">
-      <li className='sidebarcollapse'>
-        <a>
-        <span><i className="fa fa-bars" id="sidebarCollapse" style={{fontSize:'28px', cursor:'pointer',marginTop:'7px'}}/></span><span className='colp ms-1'>Dashboard</span>
-      </a>
-      </li>
-      <li>
-        <Link to="Overview" className={location.pathname === "/overview" ? "active-link" : ""}>
-          <span><img className='fa' src={overview} width={28} /></span> <span className='colp'>Overview</span>
-        </Link>
-      </li>
-      <li>
-        <Link to="/account" className={location.pathname === "/account" ? "active-link" : ""}>
-          <span><img className='fa' src={profile} width={28} /></span>   <span className='colp'>My Account</span>
-        </Link>
-      </li>
-      <li>
-        <Link to="/my_security" className={location.pathname === "/my_security" ? "active-link" : ""}>
-          <span><img className='fa' src={security} width={28} /></span>   <span className='colp'>My Security</span>
-        </Link>
-      </li>
-
-      <li>
-        <Link to="/" className={location.pathname === "/" ? "active-link" : ""}>
-          <span><img className='fa' src={portfolio} width={28}  /></span>   <span className='colp'>My Portfolios</span>
-        </Link>
-      </li>
-      <li>
-        <Link to="/help" className={location.pathname === "/help" ? "active-link" : ""}>
-          <span><img className='fa' src={help} width={28} /></span>   <span className='colp'>Help</span>
-        </Link>
-      </li>
-      <li>
-        <Link to="/logout" className={location.pathname === "/logout" ? "active-link" : ""}>
-          <span><img className='fa' src={logout} width={28} /></span>   <span className='colp'>Logout</span>
-        </Link>
-      </li>
-    </ul>
-  </nav>
+      <ul className="list-unstyled components mb-5">
+        <li className='sidebarcollapse'>
+          <Link id="sidebarCollapse">
+            <span ><i className="fa fa-bars" style={{ fontSize: '28px', cursor: 'pointer', marginTop: '7px' }} /></span><span className='colp ms-1'>Dashboard</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="Overview" className={location.pathname === "/overview" ? "active-link" : ""}>
+            <span><img className='fa' src={overview} width={28} alt='' /></span> <span className='colp'>Overview</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/account" className={location.pathname === "/account" ? "active-link" : ""}>
+            <span><img className='fa' src={profile} width={28} alt='' /></span>   <span className='colp'>My Account</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/my_security" className={location.pathname === "/my_security" ? "active-link" : ""}>
+            <span><img className='fa' src={security} width={28} alt='' /></span>   <span className='colp'>My Security</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/" className={location.pathname === "/" ? "active-link" : ""}>
+            <span><img className='fa' src={portfolio} width={28} alt='' /></span>   <span className='colp'>My Portfolios</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/help" className={location.pathname === "/help" ? "active-link" : ""}>
+            <span><img className='fa' src={help} width={28} alt='' /></span>   <span className='colp'>Help</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/logout" className={location.pathname === "/logout" ? "active-link" : ""}>
+            <span><img className='fa' src={logout} width={28} alt='' /></span>   <span className='colp'>Logout</span>
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
