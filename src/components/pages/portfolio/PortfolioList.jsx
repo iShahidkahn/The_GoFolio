@@ -8,9 +8,9 @@ const PortfolioList = () => {
         <ul>
           <li><a href="/#">GoFolio Calculated</a></li>
           <li><a href="/#">User Defined</a></li>
-          <li><a href="/#" className='active'>Show All</a> </li>
+          <li><a href="/#" className='active'>Show All</a></li>
           <li className='ms-auto'>
-            <div className="d-flex sort-by me-2">
+            <div className="d-flex sort-by me-0">
               <p>Sort by:</p>
               <span>
                 <select class="form-select form-select-sm" aria-label=".form-select-sm example">

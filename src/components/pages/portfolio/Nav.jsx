@@ -65,15 +65,15 @@ const Nav = () => {
       </div>
     </div>
   </nav> */}
-    <div class="d-block d-md-flex flex-wrap align-items-center py-4">
-      <div class="mb-3 mb-md-0 text-center text-md-start">
+    <div class="d-block d-md-flex flex-wrap align-items-center py-2 py-md-4 py-lg-4 py-xl-4">
+      <div class="mb-1 mb-md-0 text-center text-md-start">
         <a href="#" class="nav-link ms-0" style={{ borderBottom: 'none' }}>
           <span class="heading">
             Compare Portfolios
           </span>
         </a>
       </div>
-      <div class="ms-auto ">
+      <div class="ms-auto mb-1">
         <a href="#" class="nav-link text-end" tabindex="-1" aria-disabled="true" style={{ borderBottom: 'none' }}>
           <div class="d-flex align-items-center" style={{ justifyContent: 'space-between' }}>
             <div className='d-md-none'> 
