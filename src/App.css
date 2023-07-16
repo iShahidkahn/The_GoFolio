@@ -1586,9 +1586,11 @@ color: whitesmoke;
     margin: 10px 0 !important;
   }
   .pricing-container {
-    margin: 10px;
+    margin: 20px;
   }
-  
+  .blog-right-section{
+    margin-top: 20px;
+  }
   .pricing-faq {
     height: 44px !important;
   }

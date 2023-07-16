@@ -123,8 +123,9 @@ const BlogContent = () => {
                 </div>
                 {/* ----------------------------- Right Section --------------------------- */}
                 <div className="col-md-3 col-12  blog-right-section">
+                <div style={{ border: '1px solid #ebebeb', margin:'30px 0 40px 0' }} className='d-block d-md-none'></div>
                     <input className="form-control mb-4" type="seacrh" placeholder="Seacrh..." aria-label="seacrh" />
-                    <div style={{ border: '1px solid #ebebeb' }}></div>
+                    <div style={{ border: '1px solid #ebebeb' }} className='d-none d-md-block'></div>
                     <div className="my-4">
                         <p className='right-blog-caption'>
                             Categories
