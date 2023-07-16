@@ -42,11 +42,11 @@ const AllPosts = () => {
         <div className="all-posts">
             <h1 className='text-center heading-text'>Blog</h1>
             <ul>
-                <li><Link to='/all'>All</Link></li>
-                <li><Link to='/all'>BUSINESS</Link></li>
-                <li><Link to='/all'>MARKET</Link></li>
-                <li><Link to='/all'>CONSULTING</Link></li>
-                <li><Link to='/all'>LIFESTYLE</Link></li>
+                <li><Link to='/blog'>BLOG</Link></li>
+                <li><Link to='/business'>BUSINESS</Link></li>
+                <li><Link to='/market'>MARKET</Link></li>
+                <li><Link to='/consulting'>CONSULTING</Link></li>
+                <li><Link to='/lifestyle'>LIFESTYLE</Link></li>
             </ul>
             <div className="row">
                 {cardData.slice(0, 10).map((card, index) => (
