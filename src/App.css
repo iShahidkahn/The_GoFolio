@@ -1585,7 +1585,10 @@ color: whitesmoke;
   .pricing-container .col-md-4 {
     margin: 10px 0 !important;
   }
-
+  .pricing-container {
+    margin: 10px;
+  }
+  
   .pricing-faq {
     height: 44px !important;
   }
