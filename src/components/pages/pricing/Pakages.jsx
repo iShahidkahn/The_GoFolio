@@ -1,8 +1,7 @@
 import React from 'react'
 
 const Pakages = () => {
-    return (
-        
+    return ( 
         <div className='pricing-container mb-5 pb-5'>
             <h1 className='text-center heading-text'>Pricing</h1>
             <div className="row my-4">
