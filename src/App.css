@@ -1363,6 +1363,7 @@ background-color: #012e40;
 /* ------------------ Blog ----------------- */
 .all-posts {
   margin: 10px 80px;
+  padding-bottom: 20px;
 }
 .all-posts .row .col-md-4 {
   /* margin: 10px 120px; */
@@ -1462,7 +1463,7 @@ color: whitesmoke;
     width: 100%;
   }
   .all-posts {
-    margin: 0;
+    margin: 0 10px;
   }
   .all-posts ul{
   display: flex;
@@ -1650,9 +1651,12 @@ color: whitesmoke;
 }
 .all-posts ul li {
   list-style-type: none;
-  margin: 10px 3px 0 3px;
+  margin: 10px 10px 0 10px;
 }
 .all-posts ul {
   padding: 0;
+}
+.all-posts .card {
+  width: 100vh !important;
 }
 }
