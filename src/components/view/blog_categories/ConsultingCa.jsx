@@ -45,7 +45,7 @@ const ConsultingCa = () => {
                 <li><Link to='/blog'>BLOG</Link></li>
                 <li><Link to='/business'>BUSINESS</Link></li>
                 <li><Link to='/market'>MARKET</Link></li>
-                <li><Link to='/consulting'>CONSULTING</Link></li>
+                <li><Link to='/consulting' className='active-blog'>CONSULTING</Link></li>
                 <li><Link to='/lifestyle'>LIFESTYLE</Link></li>
             </ul>
             <div className="row">

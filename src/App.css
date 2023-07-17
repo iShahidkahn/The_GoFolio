@@ -1070,6 +1070,9 @@ background-color: #012e40;
   font-size: 17px;
   font-family: sans-serif;
 }
+.active-blog{
+  border-bottom: 2px solid #f09a5b;
+}
 /* ------------------ EndBlog Page ----------------- */
 /* ------------------ Home Page ----------------- */
 

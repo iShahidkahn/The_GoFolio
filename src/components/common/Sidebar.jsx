@@ -22,7 +22,7 @@ function Sidebar() {
           </Link>
         </li>
         <li>
-          <Link to="Overview" className={location.pathname === "/overview" ? "active-link" : ""}>
+          <Link to="" className={location.pathname === "/overview" ? "active-link" : ""}>
             <span><img className='fa' src={overview} width={28} alt='' /></span> <span className='colp'>Overview</span>
           </Link>
         </li>
@@ -32,22 +32,22 @@ function Sidebar() {
           </Link>
         </li>
         <li>
-          <Link to="/my_security" className={location.pathname === "/my_security" ? "active-link" : ""}>
+          <Link to="" className={location.pathname === "/my_security" ? "active-link" : ""}>
             <span><img className='fa' src={security} width={28} alt='' /></span>   <span className='colp'>My Security</span>
           </Link>
         </li>
         <li>
-          <Link to="/" className={location.pathname === "/" ? "active-link" : ""}>
+          <Link to="/my_portfolio" className={location.pathname === "/my_portfolio" ? "active-link" : ""}>
             <span><img className='fa' src={portfolio} width={28} alt='' /></span>   <span className='colp'>My Portfolios</span>
           </Link>
         </li>
         <li>
-          <Link to="/help" className={location.pathname === "/help" ? "active-link" : ""}>
+          <Link to="" className={location.pathname === "/help" ? "active-link" : ""}>
             <span><img className='fa' src={help} width={28} alt='' /></span>   <span className='colp'>Help</span>
           </Link>
         </li>
         <li>
-          <Link to="/logout" className={location.pathname === "/logout" ? "active-link" : ""}>
+          <Link to="" className={location.pathname === "/logout" ? "active-link" : ""}>
             <span><img className='fa' src={logout} width={28} alt='' /></span>   <span className='colp'>Logout</span>
           </Link>
         </li>

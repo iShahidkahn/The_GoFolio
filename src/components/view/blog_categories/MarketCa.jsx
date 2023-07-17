@@ -42,7 +42,7 @@ const MarketCa = () => {
             <ul>
                 <li><Link to='/blog'>BLOG</Link></li>
                 <li><Link to='/business'>BUSINESS</Link></li>
-                <li><Link to='/market'>MARKET</Link></li>
+                <li><Link to='/market' className='active-blog'>MARKET</Link></li>
                 <li><Link to='/consulting'>CONSULTING</Link></li>
                 <li><Link to='/lifestyle'>LIFESTYLE</Link></li>
             </ul>

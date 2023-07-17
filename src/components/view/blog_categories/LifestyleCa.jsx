@@ -46,7 +46,7 @@ const LifestyleCa = () => {
                 <li><Link to='/business'>BUSINESS</Link></li>
                 <li><Link to='/market'>MARKET</Link></li>
                 <li><Link to='/consulting'>CONSULTING</Link></li>
-                <li><Link to='/lifestyle'>LIFESTYLE</Link></li>
+                <li><Link to='/lifestyle' className='active-blog'>LIFESTYLE</Link></li>
             </ul>
             <div className="row">
                 {cardData.slice(0, 10).map((card, index) => (

@@ -43,7 +43,7 @@ const BusinessCa = () => {
             <h1 className='text-center heading-text'>Blog</h1>
             <ul>
                 <li><Link to='/blog'>BLOG</Link></li>
-                <li><Link to='/business'>BUSINESS</Link></li>
+                <li><Link to='/business' className='active-blog'>BUSINESS</Link></li>
                 <li><Link to='/market'>MARKET</Link></li>
                 <li><Link to='/consulting'>CONSULTING</Link></li>
                 <li><Link to='/lifestyle'>LIFESTYLE</Link></li>
