@@ -1650,6 +1650,9 @@ color: whitesmoke;
 }
 .all-posts ul li {
   list-style-type: none;
-  margin: 0;
+  margin: 10px 3px 0 3px;
+}
+.all-posts ul {
+  padding: 0;
 }
 }
