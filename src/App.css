@@ -1648,5 +1648,8 @@ color: whitesmoke;
 .home-hero-inner-box {
   height:400px;
 }
-
+.all-posts ul li {
+  list-style-type: none;
+  margin: 0;
+}
 }
