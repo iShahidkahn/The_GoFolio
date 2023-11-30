@@ -13,7 +13,7 @@ const Navbar = () => {
         setIsClicked(true);
     };
     return (
-        <nav className="navbar navbar-expand-lg navbar-light top-nav">
+        <nav className="navbar navbar-expand-lg navbar-light top-nav p-md-4">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/" style={{border:'none'}}>
                     <img src={logo} alt=''/>
