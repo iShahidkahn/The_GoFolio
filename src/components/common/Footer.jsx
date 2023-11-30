@@ -1,11 +1,11 @@
 import React from 'react';
-import footerLogo from '../../../dist/images/GOFOLIO_WHITE.svg';
-import mail from '../../../dist/icons/mail.svg';
-import facebook from '../../../dist/icons/facebook.svg';
-import instagram from '../../../dist/icons/instagram.svg';
+import footerLogo from '../../dist/images/GOFOLIO_WHITE.svg';
+import mail from '../../dist/icons/mail.svg';
+import facebook from '../../dist/icons/facebook.svg';
+import instagram from '../../dist/icons/instagram.svg';
 
 
-const HomeFooter = () => {
+const Footer = () => {
     return (
         <div className='home-footer'>
             <div className="logo-footer">
@@ -36,4 +36,4 @@ const HomeFooter = () => {
     )
 }
 
-export default HomeFooter
+export default Footer

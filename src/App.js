@@ -13,6 +13,7 @@ import BusinessCa from './components/view/blog_categories/BusinessCa';
 import LifestyleCa from './components/view/blog_categories/LifestyleCa';
 import MarketCa from './components/view/blog_categories/MarketCa';
 import ConsultingCa from './components/view/blog_categories/ConsultingCa';
+import Footer from './components/common/Footer';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route exact path="/lifestyle" element={<LifestyleCa />} />
           <Route exact path="/market" element={<MarketCa />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
 
